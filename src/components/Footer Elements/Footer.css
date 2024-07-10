@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+  position: absolute; /* Changed from absolute to relative */
+  top: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-start;
+  align-items: stretch;
+}

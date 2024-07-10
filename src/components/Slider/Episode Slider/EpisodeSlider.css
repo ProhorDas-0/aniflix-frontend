@@ -1,0 +1,36 @@
+.episode-slider{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: -5%;
+    width: 30%;
+    height: auto;
+    max-height: 500px;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.ep-type{
+    display: none;
+    align-self: flex-start;
+    margin-left: 30px ;
+}
+@media screen and (max-width: 1299px){
+    .ep-type{
+        display: block;
+    }
+    .episode-slider{
+        display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Updated from nowrap to wrap */
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative; /* Changed from absolute to relative */
+  margin: 0 auto; /* Center the container */
+  margin-top: 10px;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+    }
+}

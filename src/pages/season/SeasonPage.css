@@ -1,0 +1,35 @@
+.container{
+    position: absolute;
+    top: 100%;
+}
+.episode-container{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Updated from nowrap to wrap */
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative; /* Changed from absolute to relative */
+  margin-left: 0px ;
+  margin-top: 10px;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+}
+.sn-type{
+    display: block;
+    align-self: flex-start;
+    margin-left: 30px ;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+@media screen and (max-width: 650px){
+    .episode-container{
+        margin-left: 0px ;
+    }
+}

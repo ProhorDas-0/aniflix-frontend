@@ -1,0 +1,122 @@
+li.season-bar{ 
+  position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Asap, sans-serif;
+    border-radius: 15px; /* Fully rounded corners for capsule shape */
+    max-height: 500px;
+    width: 100%;
+    background: #2a2940;
+}
+.season-bar-show{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+.season-cover{
+    max-height: 500px;
+    aspect-ratio: 500/700;
+    height: 300px;
+    background-position: center center ;
+    background-size: cover;
+    z-index: 0;
+    border-radius: 15px;
+}
+.stext{
+  margin-left: 20px;
+}
+.stitle{
+  font-size: 35px;
+  font-weight:500;
+}
+.sinfo{
+  font-size: 16px;
+  font-weight:100;
+}
+.episode-bar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Asap, sans-serif;
+    border-radius: 15px; /* Fully rounded corners for capsule shape */
+    max-height: 300px;
+  }
+  .episode-show{
+    display: block;
+    max-width: 500px;
+    max-height: 300px;
+    width: 300px;
+    aspect-ratio: 500/300;
+    position: relative;
+  }
+  .epi-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .thumbnail {
+    height: 100%;
+    width: 100%;
+    background-position: center center ;
+    background-size: cover;
+    z-index: 0;
+  }
+  
+  .shape{
+    height: 40%;
+    width: 100%;
+    margin-top: -22%;
+    filter: blur(5px);
+    z-index: 1;
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), radial-gradient(22.52% 68.44% at 49.06% 13.13%, #31376F 0%, rgba(137, 75, 162, 0) 100%) , conic-gradient(from 180deg at 50% 21.47%, #7976E8 -110.28deg, #F449F4 6.37deg, #0019C0 153.67deg, #7976E8 249.72deg, #F449F4 366.37deg); */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border-top-left-radius: 500px 80px;
+    border-top-right-radius: 500px 80px;
+  }
+  .title{
+    color: #fff;
+    font-weight: 500;
+    z-index: 3;
+    font-size: 145%;
+    margin-top: -20%;
+  }
+
+  @media screen and (max-width: 1199px) {
+    li.season-bar {
+      border-radius: 0px;
+      width: auto;
+      background: transparent;
+    }
+    .season-bar-show{
+      flex-direction: column;
+    }
+    .stext {
+      margin-left: 0px;
+      height: 45px;
+  }
+  .stitle{
+    font-size: 22px;
+  }
+  .sinfo {
+    display: none;
+}
+  }

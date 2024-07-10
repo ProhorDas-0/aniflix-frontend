@@ -1,0 +1,23 @@
+#app {
+  height: 100%;
+}
+.swiper {
+  width: 98%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  /* text-align: center; */
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-button-prev, .swiper-button-next{
+  display: none;
+}

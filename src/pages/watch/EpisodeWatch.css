@@ -1,0 +1,20 @@
+.watch{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+@media screen and (max-width: 1299px) {
+    .watch{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+  }

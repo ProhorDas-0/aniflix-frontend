@@ -1,0 +1,22 @@
+body {
+  background: #201f31;
+  font-family: Montserrat, Arial;
+  color: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none !important;
+  outline: 0;
+  -moz-outline: none;
+}
+
+a:hover {
+  color: #ffbade;
+}
+
+.App {
+  margin-top: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
